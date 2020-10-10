@@ -1,0 +1,22 @@
+{{ $tinyw := default "500x" }}
+{{ $smallw := default "800x" }}
+{{ $mediumw := default "1200x" }}
+{{ $largew := default "1500x" }}
+
+
+{{ $image := .Page.Resources.GetMatch .Destination }}
+{{ $tinyImage := $image.Resize "500x" }}
+{{ $smallImage := $image.Resize "800x" }}
+{{ $mediumImage := $image.Resize "1200x" }}
+{{ $largeImage := $image.Resize "1500x" }}
+
+
+<p class="md__image">
+<picture>
+  <source media="(min-width:500px)" srcset={{ $tinyImage.RelPermalink }}>
+  <source media="(min-width:800px)" srcset={{ $smallImage.RelPermalink }}>
+  <source media="(min-width:1200px)" srcset={{ $mediumImage.RelPermalink }}>
+  <source media="(min-width:1500px)" srcset={{ $largeImage.RelPermalink }}>
+  <img src="{{ .Destination | safeURL }}" alt="Flowers" style="width:auto;">
+</picture>
+</p>
