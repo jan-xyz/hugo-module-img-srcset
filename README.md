@@ -3,12 +3,12 @@ A Hugo module to modify image Markdown tags to support srcsets
 
 This module turns your normal image shortcode into a srcset:
 
-```
+```markdown
 ![Text](image/map.jpg)
 ```
 gets rendered into
 
-```
+```html
 <p class="md__image">
 <picture>
   <source media="(min-width:500px)" srcset="/.../images/foo_500x0_resize_q75_box.jpg">
@@ -23,7 +23,7 @@ gets rendered into
 ## Usage
 
 In your hugo project run 
-```
+```sh
 hugo mod get -u github.com/jan-xyz/hugo-module-img-srcset
 ```
 
@@ -33,3 +33,7 @@ and add the module to your `config.toml` :
 theme = [ "github.com/jan-xyz/hugo-module-img-srcset"]
 ...
 ```
+
+## Example
+
+[github.com/jan-xyz/blog](github.com/jan-xyz/blog)
