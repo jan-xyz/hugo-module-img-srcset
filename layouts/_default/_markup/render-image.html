@@ -12,7 +12,7 @@
   <source media="(min-width:800px)" srcset={{ $smallImage.RelPermalink | safeURL }}>
   <source media="(min-width:1200px)" srcset={{ $mediumImage.RelPermalink | safeURL }}>
   <source media="(min-width:1500px)" srcset={{ $largeImage.RelPermalink | safeURL }}>
-  <img src="{{ .Destination | safeURL }}" alt="{{ .Title }}" style="width:auto;">
+  <img src="{{ .Destination | safeURL }}" alt="{{ .Title }}" title="{{ .Title }}" style="width:auto;">
   <figcaption>{{ .Text }}</figcaption>
 </figure>
 </p>
