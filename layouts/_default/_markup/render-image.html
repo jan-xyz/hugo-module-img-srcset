@@ -1,10 +1,5 @@
-{{ $tinyw := default "500x" }}
-{{ $smallw := default "800x" }}
-{{ $mediumw := default "1200x" }}
-{{ $largew := default "1500x" }}
-
-
 {{ $image := .Page.Resources.GetMatch .Destination }}
+
 {{ $tinyImage := $image.Resize "500x" }}
 {{ $smallImage := $image.Resize "800x" }}
 {{ $mediumImage := $image.Resize "1200x" }}
