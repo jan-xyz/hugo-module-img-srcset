@@ -23,11 +23,9 @@ resizes the image to support multiple view port sizes and renderes the appropria
 
 ## Usage
 
-and add the module to your `config.toml` :
+Add the module to your `config.toml` :
 ```toml
-...
 theme = [ "github.com/jan-xyz/hugo-module-img-srcset"]
-...
 ```
 
 ## Example
