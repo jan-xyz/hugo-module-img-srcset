@@ -22,11 +22,6 @@ gets rendered into
 
 ## Usage
 
-In your hugo project run 
-```sh
-hugo mod get -u github.com/jan-xyz/hugo-module-img-srcset
-```
-
 and add the module to your `config.toml` :
 ```toml
 ...
