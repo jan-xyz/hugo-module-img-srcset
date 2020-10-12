@@ -30,4 +30,4 @@ theme = [ "github.com/jan-xyz/hugo-module-img-srcset"]
 
 ## Example
 
-[github.com/jan-xyz/blog](github.com/jan-xyz/blog)
+[github.com/jan-xyz/blog](https://github.com/jan-xyz/blog)
