@@ -1,5 +1,5 @@
 # hugo-module-img-srcset
-A Hugo module to modify image Markdown tags to support srcsets
+A [Hugo](https://gohugo.io) module to modify image Markdown tags to support [srcsets](https://www.w3schools.com/tags/att_source_srcset.asp)
 
 This module turns your normal image shortcode into a srcset:
 
