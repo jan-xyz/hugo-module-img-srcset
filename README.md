@@ -23,12 +23,18 @@ appropriate HTML source set:
 </p>
 ```
 
-## Usage
+## Installation
 
-Add the module to your `config.toml` :
+1. Install as a Git submodule:
+
+```bash
+git submodule add https://github.com/jan-xyz/hugo-module-img-srcset.git themes/hugo-module-img-srcset
+```
+
+2. Register as a [theme component](https://gohugo.io/hugo-modules/theme-components/) in `config.toml`:
 
 ```toml
-theme = [ "github.com/jan-xyz/hugo-module-img-srcset"]
+theme = [ "your-current-theme", "hugo-module-img-srcset"]
 ```
 
 ## Example
